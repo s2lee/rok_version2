@@ -198,3 +198,4 @@ class SearchNewsByDate(GenericAPIView):
 - S3 사용 해보기
 - API 문서화
 - nginx.conf 다시 정의?
+- version1의 레벨링, 아이템 구매기능 추가
