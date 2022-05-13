@@ -194,7 +194,7 @@ class SearchNewsByDate(GenericAPIView):
 - celery task test code 작성
 - Elasticsearch
 - react 시간표시 timesince로 해서 몇 분 전 구현
-- comment 보낼 때 parent 있는 comment 는 reply로 뒤에 붙이기만 해야하는데.. -> comments.filter(comment => comment.reply.parent === comment.id)해서 comment를 다시 useState해주면 되는데 comment.reply 가 재귀로 들어가 있어서 parent 값이 안불러와짐;
+- comment 보낼 때 parent 있는 comment 는 reply로 뒤에 붙이기만 해야하는데.. -> comments.filter(comment => comment.reply.parent === comment.id)해서 comment를 다시 useState해주면 되는데 comment.reply 가 재귀로 들어가 있어서 parent 값이 안불러와짐 --> 구조 바꾸기
 - S3 사용 해보기
 - API 문서화
 - nginx.conf 다시 정의?
