@@ -67,7 +67,7 @@
 
 **etc.**
 - Code Style Guides - flake8, isort, black
-- SSL - Let's Encrypt(Certbot)
+- SSL/TLS - Let's Encrypt(Certbot)
 
 <br><br>
 # 3. 아키텍처
