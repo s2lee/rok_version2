@@ -2,9 +2,10 @@
 
 - [Part 1. 프로젝트 소개](#1-프로젝트-소개)
 - [Part 2. 사용 기술 스택](#2-사용-기술-스택)
-- [Part 3. 추가 기능](#3-추가-기능)
-- [Part 4. 이슈 정리](#4-이슈-정리)  
-- [Part 5. 보완할 점](#5-보완할-점)
+- [Part 3. 아키텍처](#3-아키텍처)
+- [Part 4. 추가 기능](#4-추가-기능)
+- [Part 5. 이슈 정리](#5-이슈-정리)  
+- [Part 6. 보완할 점](#6-보완할-점)
 
 <br><br>
 
@@ -69,8 +70,12 @@
 - SSL - Let's Encrypt(Certbot)
 
 <br><br>
+# 3. 아키텍처
+<img src="https://user-images.githubusercontent.com/82914197/169293309-7e1e9368-1fad-4516-8879-55f76e92b01a.jpg">
 
-# 3. 추가 기능
+<br><br>
+
+# 4. 추가 기능
 
 ### 매일 자정 인기가 좋은 기사 3개를 오늘의 신문으로 선정하고 기사를 작성한 사람에게 포인트를 부여하는 기능:sparkles: 
 
@@ -175,7 +180,7 @@ class SearchNewsByDate(GenericAPIView):
 
 <br><br>
 
-# 4. 이슈 정리
+# 5. 이슈 정리
 - docker celery RecursionError: maximum recursion depth exceeded while calling a Python object 문제 —> celery 이미지를 backend 것을 가져다 쓰는데 .env.dev 파일을 지정해주지 않아서
 - media 폴더가 생성되는 위치 문제 -> BASE_DIR = Path(__file__).resolve().parent.parent.parent로 해결
 - React에서 reply 를 어떻게 입력할 수 있을까? —> 재귀 구조로 comment form 재사용
@@ -188,7 +193,7 @@ class SearchNewsByDate(GenericAPIView):
 
 <br><br>
 
-# 5. 보완할 점
+# 6. 보완할 점
 - count(spear - shield) 속도?
 - 로그인 후 활동이 없으면 1시간 뒤에 자동 로그아웃하는 기능
 - celery task test code 작성
